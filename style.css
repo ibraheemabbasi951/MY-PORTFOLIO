@@ -1,0 +1,317 @@
+
+/* ===== Ibraheem Abbasi Professional Portfolio ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #080d1a;
+    color: #e5e7eb;
+    line-height: 1.8;
+}
+
+.ibraheem-abbasi-portfolio {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Header / Hero Section */
+
+.portfolio-header {
+    min-height: 480px;
+    padding: 100px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #111b35, #172554, #312e81);
+    border: 1px solid #334155;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-header > p:first-child {
+    color: #67e8f9;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.portfolio-header h1 {
+    color: #ffffff;
+    font-size: clamp(40px, 7vw, 76px);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.portfolio-header h2 {
+    color: #a5b4fc;
+    font-size: clamp(17px, 3vw, 25px);
+    margin-bottom: 20px;
+}
+
+.portfolio-header p {
+    max-width: 720px;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+.portfolio-header a {
+    display: inline-block;
+    text-decoration: none;
+    color: #080d1a;
+    background: #67e8f9;
+    padding: 12px 24px;
+    margin: 6px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.portfolio-header a:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* General Sections */
+
+.ibraheem-abbasi-portfolio section {
+    margin-top: 28px;
+    padding: 38px;
+    background: #111827;
+    border: 1px solid #263449;
+    border-radius: 18px;
+}
+
+.ibraheem-abbasi-portfolio section > h2 {
+    color: #67e8f9;
+    font-size: 30px;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #334155;
+}
+
+.ibraheem-abbasi-portfolio section p {
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+/* Personal Information */
+
+.personal-information dl {
+    display: grid;
+    grid-template-columns: minmax(130px, 0.7fr) 1.5fr;
+    gap: 0;
+}
+
+.personal-information dt,
+.personal-information dd {
+    padding: 14px;
+    border-bottom: 1px solid #263449;
+    overflow-wrap: anywhere;
+}
+
+.personal-information dt {
+    color: #67e8f9;
+    font-weight: 700;
+}
+
+.personal-information dd {
+    color: #e5e7eb;
+}
+
+/* Skills */
+
+.skills-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.skills-section > h2 {
+    grid-column: 1 / -1;
+}
+
+.skill {
+    padding: 24px;
+    background: #172033;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    border-color: #67e8f9;
+}
+
+.skill h3 {
+    color: #a5b4fc;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.skill p {
+    margin-bottom: 0 !important;
+}
+
+/* Projects */
+
+.projects-section > p {
+    margin-bottom: 24px;
+}
+
+.project-card {
+    padding: 28px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #172033, #111827);
+    border: 1px solid #334155;
+    border-left: 4px solid #67e8f9;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+.project-card h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.project-card > p:first-of-type {
+    color: #a5b4fc;
+    font-weight: 600;
+}
+
+.project-card span {
+    display: inline-block;
+    color: #67e8f9;
+    background: #0c2636;
+    border: 1px solid #164e63;
+    border-radius: 20px;
+    padding: 5px 12px;
+    margin: 5px 5px 0 0;
+    font-size: 13px;
+}
+
+/* Learning Journey */
+
+.learning-section ul {
+    padding-left: 25px;
+    color: #cbd5e1;
+}
+
+.learning-section li {
+    padding: 7px 0;
+}
+
+.learning-section li::marker {
+    color: #67e8f9;
+}
+
+/* Vision */
+
+.vision-section blockquote {
+    margin-top: 25px;
+    padding: 20px;
+    color: #a5b4fc;
+    background: #172033;
+    border-left: 4px solid #67e8f9;
+    border-radius: 8px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Contact */
+
+.contact-section a {
+    color: #67e8f9;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-section a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.portfolio-footer {
+    text-align: center;
+    margin-top: 28px;
+    padding: 28px 15px;
+    background: #111827;
+    border: 1px solid #263449;
+    border-radius: 16px;
+}
+
+.portfolio-footer p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+    .ibraheem-abbasi-portfolio {
+        padding: 14px;
+    }
+
+    .portfolio-header {
+        min-height: auto;
+        padding: 65px 20px;
+    }
+
+    .portfolio-header h1 {
+        letter-spacing: -1px;
+    }
+
+    .ibraheem-abbasi-portfolio section {
+        padding: 24px 18px;
+    }
+
+    .ibraheem-abbasi-portfolio section > h2 {
+        font-size: 25px;
+    }
+
+    .skills-section {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-section > h2 {
+        grid-column: auto;
+    }
+
+    .personal-information dl {
+        grid-template-columns: 1fr;
+    }
+
+    .personal-information dt {
+        padding-bottom: 2px;
+        border-bottom: none;
+    }
+
+    .personal-information dd {
+        padding-top: 2px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+}
